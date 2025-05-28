@@ -1,0 +1,25 @@
+{
+  "name": "imhex-pl-grammar",
+  "displayName": "ImHex Pattern Language Syntax Highlighting",
+  "description": "Syntax Highlighting for ImHex's Pattern Language",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pl",
+      "aliases": ["Pattern Language", "pl"],
+      "extensions": [".hexpat"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pl",
+      "scopeName": "source.pl",
+      "path": "./syntaxes/pl.tmLanguage.json"
+    }]
+  }
+}
